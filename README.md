@@ -8,9 +8,11 @@ Personalization is a powerful marketing tool that helps marketing and product te
 
 ## Tutorial
 
-In this guide, we have discussed about personalization, what it is and how you can implement it on your Contentstack-powered websites using Optimizely's Feature Test. Example banner image below :
+In this guide, we have discussed about personalization, what it is and how you can implement it on your Contentstack-powered websites using Optimizely's Feature Test. Example banner variations below :
 
-![Screenshot from 2020-05-12 15-56-12](https://user-images.githubusercontent.com/29656920/81673440-464ab700-9469-11ea-9379-37a9dc12967a.png)
+![Screenshot from 2020-05-14 15-29-21](https://user-images.githubusercontent.com/29656920/81922895-6b226400-95fa-11ea-9b01-c894a7605042.png)
+
+![Screenshot from 2020-05-14 15-29-21](https://user-images.githubusercontent.com/29656920/81922895-6b226400-95fa-11ea-9b01-c894a7605042.png)
 
 
 ## Documentation
