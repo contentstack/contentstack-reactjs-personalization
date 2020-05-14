@@ -12,7 +12,9 @@ In this guide, we have discussed about personalization, what it is and how you c
 
 ![Screenshot from 2020-05-14 15-29-21](https://user-images.githubusercontent.com/29656920/81922895-6b226400-95fa-11ea-9b01-c894a7605042.png)
 
-![Screenshot from 2020-05-14 15-29-21](https://user-images.githubusercontent.com/29656920/81922895-6b226400-95fa-11ea-9b01-c894a7605042.png)
+![Screenshot from 2020-05-14 15-29-57](https://user-images.githubusercontent.com/29656920/81923025-a6249780-95fa-11ea-9089-4598abb79d7f.png)
+
+
 
 
 ## Documentation
