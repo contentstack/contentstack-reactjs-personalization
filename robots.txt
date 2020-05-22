@@ -1,9 +1,0 @@
-User-agent: *
-
-# Path (URLS not to crawl)
-
-Disallow: /Everything-You-Need-to-Know-About-Content-Personalization-Technology
-Disallow: /Contentstack’s-In-App-Search-Just-Got-Stronger-and-More-Flexible
-Disallow: /How-Modern-Marketers-Can-Implement-AI-for-Content-Marketing
-Disallow: /Contentstack-and-commercetools-Host-Retail-Industry-MACH-tail-Reception
-
