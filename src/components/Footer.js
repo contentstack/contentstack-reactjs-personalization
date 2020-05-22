@@ -9,7 +9,7 @@ import "../staticAssets/css/font-awesome.css";
 import ReactHtmlParser, {
   processNodes,
   convertNodeToElement,
-  htmlparser2
+  htmlparser2,
 } from "react-html-parser";
 import { getData } from "./Helper";
 
@@ -18,33 +18,32 @@ class Footer extends Component {
     super(props);
 
     this.state = {
-      footer: ""
+      footer: "",
     };
   }
 
   componentDidMount() {
     getData(
-      `https://cdn.contentstack.io/v3/content_types/${process.env.REACT_APP_FOOTER_CONTENT_TYPE}/entries/${process.env.REACT_APP_FOOTER_ENTRY_UID}?environment=${process.env.REACT_APP_PUBLISH_ENVIRONMENT}&locale=en-us`
-    )
-      .then(data => {
+      `https://cdn.contentstack.io/v3/content_types/${process.env.REACT_APP_FOOTER_CONTENT_TYPE}/entries/?environment=${process.env.REACT_APP_PUBLISH_ENVIRONMENT}`)
+      .then((data) => {
         this.setState({
-          footer: data
+          footer: data,
         });
       })
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
       });
   }
 
   render() {
     if (this.state.footer !== "") {
-      const blockOne = this.state.footer.data.entry.footer_section
+      const blockOne = this.state.footer.data.entries[0].footer_section
         .footer_menu[0].footer_content;
-      const blockTwo = this.state.footer.data.entry.footer_section
+      const blockTwo = this.state.footer.data.entries[0].footer_section
         .footer_menu[1].footer_content;
-      const blockThree = this.state.footer.data.entry.footer_section
+      const blockThree = this.state.footer.data.entries[0].footer_section
         .footer_menu[2].footer_content;
-      const copyright = this.state.footer.data.entry.copy_rights;
+      const copyright = this.state.footer.data.entries[0].copy_rights;
 
       return (
         <footer className="footer">
@@ -54,8 +53,8 @@ class Footer extends Component {
                 <div className="col-sm-6 col-md-4">
                   <h5>
                     {
-                      this.state.footer.data.entry.footer_section.footer_menu[0]
-                        .title
+                      this.state.footer.data.entries[0].footer_section
+                        .footer_menu[0].title
                     }
                   </h5>
                   {ReactHtmlParser(blockOne)}
@@ -63,8 +62,8 @@ class Footer extends Component {
                 <div className="col-sm-6 col-md-4">
                   <h5>
                     {
-                      this.state.footer.data.entry.footer_section.footer_menu[1]
-                        .title
+                      this.state.footer.data.entries[0].footer_section
+                        .footer_menu[1].title
                     }
                   </h5>{" "}
                   {ReactHtmlParser(blockTwo)}
@@ -72,8 +71,8 @@ class Footer extends Component {
                 <div className="col-sm-6 col-md-4">
                   <h5>
                     {
-                      this.state.footer.data.entry.footer_section.footer_menu[2]
-                        .title
+                      this.state.footer.data.entries[0].footer_section
+                        .footer_menu[2].title
                     }
                   </h5>{" "}
                   {ReactHtmlParser(blockThree)}
