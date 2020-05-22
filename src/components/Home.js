@@ -49,7 +49,8 @@ class Home extends Component {
   componentDidMount() {
     document.cookie = `userID=${this.state.userCookie}`;
     getData(
-      `https://cdn.contentstack.io/v3/content_types/${process.env.REACT_APP_HOME_CONTENT_TYPE}/entries/?environment=${process.env.REACT_APP_PUBLISH_ENVIRONMENT}`)
+      `https://cdn.contentstack.io/v3/content_types/${process.env.REACT_APP_HOME_CONTENT_TYPE}/entries/?environment=${process.env.REACT_APP_PUBLISH_ENVIRONMENT}`
+    )
       .then((data) => {
         this.setState({
           home: data,
@@ -121,14 +122,19 @@ class Home extends Component {
                       optimizely={optimizely}
                       user={{ id: document.cookie.split("=")[1] }}
                     >
-                      {/* Mention your feature key below */}
-                      <OptimizelyFeature autoUpdate={true} feature=" ">
+                      {/* feature key below */}
+                      <OptimizelyFeature
+                        autoUpdate={true}
+                        feature={process.env.REACT_APP_OPTIMIZELY_FEATURE_KEY}
+                      >
                         {(isEnabled, variables) => {
                           return (
-                            // Mention your experiment key below
+                            // experiment key below
                             <OptimizelyExperiment
                               autoUpdate={true}
-                              experiment=" "
+                              experiment={
+                                process.env.REACT_APP_OPTIMIZELY_EXPERIMENT_KEY
+                              }
                             >
                               {(variation) => {
                                 if (isEnabled) {
