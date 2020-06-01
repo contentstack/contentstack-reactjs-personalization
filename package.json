@@ -1,6 +1,6 @@
 {
   "name": "contentstack-reactjs-personalization",
-  "description": " This guide is for contentstack-reactjs-personalization using optimizely "
+  "description": " This guide is for contentstack-reactjs-personalization using optimizely ",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
