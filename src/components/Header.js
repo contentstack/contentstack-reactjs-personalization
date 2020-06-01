@@ -8,7 +8,7 @@ import React, { Component } from "react";
 import Home from "./Home";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Modal from "react-responsive-modal";
-import "../staticAssets/css/style.css";
+import "../static/css/style.css";
 import { getData } from "./Helper";
 
 class Header extends Component {

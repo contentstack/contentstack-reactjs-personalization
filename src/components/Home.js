@@ -9,7 +9,7 @@ import React, { Component } from "react";
 import Typed from "react-typed";
 import Footer from "./Footer";
 import $ from "jquery";
-import "../staticAssets/css/style.css";
+import "../static/css/style.css";
 import uuid from "react-uuid";
 
 import ReactHtmlParser, {
