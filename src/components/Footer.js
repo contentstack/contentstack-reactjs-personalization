@@ -24,7 +24,7 @@ class Footer extends Component {
 
   componentDidMount() {
     getData(
-      `https://cdn.contentstack.io/v3/content_types/${process.env.REACT_APP_FOOTER_CONTENT_TYPE}/entries/?environment=${process.env.REACT_APP_PUBLISH_ENVIRONMENT}`)
+      `${process.env.REACT_APP_BASE_URL}v3/content_types/${process.env.REACT_APP_FOOTER_CONTENT_TYPE}/entries/?environment=${process.env.REACT_APP_PUBLISH_ENVIRONMENT}`)
       .then((data) => {
         this.setState({
           footer: data,
