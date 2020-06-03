@@ -21,4 +21,4 @@ In this guide, we have discussed about personalization, what it is and how you c
 
 Read Contentstack [docs](https://www.contentstack.com/docs/)
 
-Learn about [React.js](https://reactjs.org/)
+Learn about [Implementing Personalization Using Optimizely on Your Website](www.contentstack.com/docs/developers/how-to-guides/implementing-personalization-using-optimizely-on-your-website/)
